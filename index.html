@@ -1,0 +1,30 @@
+Certainly! Below is a simple example of an HTML form that you can use as a spam checker. This form includes a basic input field for the user to enter a message and a submit button. You can integrate server-side code (such as PHP) to perform spam checking based on your specific requirements.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Checker</title>
+</head>
+<body>
+
+<form action="/check_spam.php" method="post">
+    <label for="message">Enter your message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+    <!-- Add any additional input fields or spam prevention techniques here -->
+
+    <input type="submit" value="Check for Spam">
+</form>
+
+</body>
+</html>
+```
+
+In this example, the form's `action` attribute is set to "/check_spam.php," indicating that the form data will be sent to a server-side script (in this case, a hypothetical PHP script named "check_spam.php"). You should replace this with the actual path to your server-side script.
+
+On the server side, you can implement spam-checking logic based on your requirements. This may include analyzing the content of the submitted message, checking for common spam patterns, or using third-party services for spam detection.
+
+Keep in mind that effective spam checking often requires a combination of client-side and server-side techniques. Additionally, this example provides a starting point, and you may need to customize it based on your specific needs and the programming language you are using on the server side.
