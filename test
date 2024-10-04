@@ -1,0 +1,9 @@
+.hero {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
